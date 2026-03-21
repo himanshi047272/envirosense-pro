@@ -1,0 +1,23 @@
+/* EnviroSense Pro — Base Styles for Flask Templates */
+/* Main dashboard styling is inline in templates/index.html */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Nunito', sans-serif; background: #eef2f7; color: #0d1b2a; }
+
+/* Loading screen */
+.loading { display: flex; align-items: center; justify-content: center;
+           min-height: 100vh; font-size: 18px; font-weight: 700; color: #4a6080; }
+.loading::after { content: ''; width: 40px; height: 40px; margin-left: 14px;
+                  border: 3px solid rgba(27,170,94,.2); border-top-color: #1baa5e;
+                  border-radius: 50%; animation: spin .7s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* API error banner */
+.api-error { background: #fff1f1; border: 1px solid rgba(229,57,53,.3);
+             border-radius: 12px; padding: 14px 18px; font-size: 13px;
+             font-weight: 700; color: #e53935; text-align: center; margin: 20px; }
+
+/* Responsive helpers */
+@media (max-width: 768px) {
+  .hide-mobile { display: none !important; }
+}
