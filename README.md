@@ -271,16 +271,6 @@ Your CSV (`data/environment_data.csv`) should have these columns:
 | aqi | int | Air Quality Index |
 | disaster_type | int | 0=Normal, 1=Storm, 2=Flood, 3=Heatwave, 4=Cold, 5=Pollution, 6=Landslide |
 
----
 
-## 👩‍💻 Author
 
-**Arjun Sharma**  
-B.Tech CSE — Environmental Monitoring Project  
-Powered by OpenWeatherMap API + Python ML
 
----
-
-## 📄 License
-
-MIT License — Free to use for academic and personal projects.
